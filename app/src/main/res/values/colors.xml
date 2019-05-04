@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#025b4d</color>
+    <color name="colorPrimaryDark">#00574b</color>
+    <color name="colorAccent">#fc1f17</color>
+    <color name="colorWarning">#ff007f</color>
+    <color name="table">#99ccff</color>
+    <color name="headline">#ff3333</color>
+    <color name="choose_level">#00cccc</color>
+    <color name="level">#99ffff</color>
+    <color name="easy">#000099</color>
+    <color name="btn">#fc4503</color>
+
+</resources>

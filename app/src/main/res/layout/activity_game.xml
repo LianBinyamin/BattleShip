@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/battleship8">
+
+        <TextView
+            android:id="@+id/turnText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/hand"
+            android:gravity="center"
+            android:layout_below="@+id/gridviewHuman"
+            android:text="@string/players_turn"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="40dp" />
+
+
+        <GridView
+            android:id="@+id/gridviewHuman"
+            android:layout_width="190dp"
+            android:layout_height="190dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:numColumns="auto_fit"
+            android:stretchMode="columnWidth" />
+
+
+        <GridView
+            android:id="@+id/gridviewAI"
+            android:layout_width="260dp"
+            android:layout_height="260dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/turnText"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:numColumns="auto_fit"
+            android:stretchMode="columnWidth" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="10dp"
+            android:indeterminate="true" />
+
+        <TextView
+            android:id="@+id/numOfShipsCompTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="40dp"
+            android:layout_below="@+id/numOfShipsHumanTv"
+            android:fontFamily="@font/comfortaa_regular"
+            android:text="@string/num_enemy_ships"
+            android:layoutDirection="ltr"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/numOfShipsHumanTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="35dp"
+            android:fontFamily="@font/comfortaa_regular"
+            android:gravity="center"
+            android:layoutDirection="ltr"
+            android:text="@string/num_human_ships"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/numOfShots"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/numOfShipsCompTv"
+            android:layout_marginStart="200dp"
+            android:fontFamily="@font/comfortaa_regular"
+            android:layout_marginTop="8dp"
+            android:layoutDirection="ltr"
+            android:text="@string/player_num_shots"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/warning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="280dp"
+            android:fontFamily="@font/comfortaa_regular"
+            android:gravity="center"
+            android:layoutDirection="ltr"
+            android:text="@string/warning"
+            android:textColor="@color/colorWarning"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="260dp"
+            android:layout_height="260dp"
+            android:id="@+id/view"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/turnText"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center"
+            android:clickable="true"
+            android:background="@android:color/transparent"/>
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

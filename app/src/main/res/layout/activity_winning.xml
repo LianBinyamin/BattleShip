@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/battleship8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/winnerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/hand"
+            android:gravity="center"
+            android:text="@string/winner"
+            android:textColor="@color/headline"
+            android:textSize="80dp" />
+
+
+        <Button
+            android:id="@+id/playAgainBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/winnerText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="210dp"
+            android:background="@drawable/bigbtn"
+            android:fontFamily="@font/chiller"
+            android:text="@string/play_again"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/homeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/playAgainBtn"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button"
+            android:fontFamily="@font/chiller"
+            android:text="@string/home"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:drawableLeft="@drawable/home"/>
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="250dp"
+            android:ems="10"
+            android:hint="@string/type_name_hint"
+            android:textColor="@color/choose_level"
+            android:textColorHint="@color/choose_level"
+            android:textSize="20dp"
+            android:fontFamily="@font/comfortaa_regular"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/btnData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editText"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/button"
+            android:fontFamily="@font/chiller"
+            android:text="@string/btn_insert_data"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="30dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/score"
+            android:layout_below="@+id/winnerText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/score"
+            android:textSize="20dp"
+            android:fontFamily="@font/comfortaa_regular"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_red_dark"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/looser"
+            android:layout_below="@+id/winnerText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:text="@string/next_time"
+            android:fontFamily="@font/comfortaa_regular"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:textColor="@color/choose_level"/>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
